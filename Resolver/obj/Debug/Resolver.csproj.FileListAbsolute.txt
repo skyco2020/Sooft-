@@ -1,0 +1,6 @@
+D:\SoftRepo\Resolver\bin\Debug\Resolver.dll
+D:\SoftRepo\Resolver\bin\Debug\Resolver.pdb
+D:\SoftRepo\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+D:\SoftRepo\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+D:\SoftRepo\Resolver\obj\Debug\Resolver.dll
+D:\SoftRepo\Resolver\obj\Debug\Resolver.pdb

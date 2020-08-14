@@ -1,0 +1,13 @@
+D:\SoftRepo\DataModal\bin\Debug\DataModal.dll.config
+D:\SoftRepo\DataModal\bin\Debug\DataModal.dll
+D:\SoftRepo\DataModal\bin\Debug\DataModal.pdb
+D:\SoftRepo\DataModal\bin\Debug\EntityFramework.dll
+D:\SoftRepo\DataModal\bin\Debug\EntityFramework.SqlServer.dll
+D:\SoftRepo\DataModal\bin\Debug\EntityFramework.xml
+D:\SoftRepo\DataModal\bin\Debug\EntityFramework.SqlServer.xml
+D:\SoftRepo\DataModal\obj\Debug\DataModal.csprojAssemblyReference.cache
+D:\SoftRepo\DataModal\obj\Debug\DataModal.csproj.CoreCompileInputs.cache
+D:\SoftRepo\DataModal\obj\Debug\DataModal.csproj.CopyComplete
+D:\SoftRepo\DataModal\obj\Debug\DataModal.dll
+D:\SoftRepo\DataModal\obj\Debug\DataModal.pdb
+D:\SoftRepo\DataModal\bin\Debug\CommonServiceLocator.dll

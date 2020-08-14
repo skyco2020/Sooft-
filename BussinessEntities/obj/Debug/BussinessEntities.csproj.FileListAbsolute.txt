@@ -1,0 +1,6 @@
+D:\SoftRepo\BussinessEntities\bin\Debug\BussinessEntities.dll
+D:\SoftRepo\BussinessEntities\bin\Debug\BussinessEntities.pdb
+D:\SoftRepo\BussinessEntities\obj\Debug\BussinessEntities.csprojAssemblyReference.cache
+D:\SoftRepo\BussinessEntities\obj\Debug\BussinessEntities.csproj.CoreCompileInputs.cache
+D:\SoftRepo\BussinessEntities\obj\Debug\BussinessEntities.dll
+D:\SoftRepo\BussinessEntities\obj\Debug\BussinessEntities.pdb

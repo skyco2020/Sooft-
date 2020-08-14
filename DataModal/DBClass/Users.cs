@@ -22,7 +22,7 @@ namespace DataModal.DBClass
         public Int32 state { get; set; }
 
         #region List
-        public Singers Singers { get; set; }
+        //public List<Singers> Singers { get; set; }
 
         #endregion
     }

@@ -30,13 +30,6 @@ namespace SooftApi.Controllers
             return Ok(query);
         }
 
-        [AllowAnonymous]
-        [HttpPost]
-        [Route("api/authenticate")]
-        public IHttpActionResult Authenticate(String username, String userpass)
-        {
-           UserBE query = _services.Login(username, userpass);
-            return Ok(query);
-        }
+       
     }
 }
