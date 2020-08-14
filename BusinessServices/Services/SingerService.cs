@@ -26,6 +26,10 @@ namespace BusinessServices.Services
             try
             {
                 Singers entity = Patterns.Singleton.FactorySinger.GetInstance().CreateEntity(Be);
+                List<Singers> verify = _unitOfWork.SingerRepository.GetAllByFilters(u => u.Name.ToLower() == entity.Name.ToLower()).ToList();
+                if (verify.Count > 0)
+                    throw new Exception("Ya existe un cantante con ese nombre");
+
                 _unitOfWork.SingerRepository.Create(entity);
                 _unitOfWork.Commit();
                 return (Int64)System.Net.HttpStatusCode.Created;

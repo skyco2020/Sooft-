@@ -39,7 +39,7 @@ namespace SooftApi.Controllers
                 return BadRequest(ModelState);
             }
             Int64 create = _services.Create(be);
-            return Created(new Uri(Url.Link("DefaultApi", new { Id = create})), be);
+            return Created(new Uri(Url.Link("DefaultApi", new { Id = create})), create);
         }
     }
 }

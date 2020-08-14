@@ -27,6 +27,10 @@ namespace BusinessServices.Services
             try
             {
                 Users entity = Patterns.Singleton.FactoryUser.GetInstance().CreateEntity(Be);
+                List<Users> verify = _unitOfWork.UserRepository.GetAllByFilters(p => p.userName.ToLower() == entity.userName.ToLower()).ToList();
+                if (verify.Count > 0)
+                    throw new Exception("Ya existe un usuario con ese nombre");
+
                 _unitOfWork.UserRepository.Create(entity);
                 _unitOfWork.Commit();
                 return (Int64)System.Net.HttpStatusCode.Created;

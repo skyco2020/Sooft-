@@ -49,6 +49,7 @@
     <Compile Include="Patterns\Singleton\FactorySingerGender.cs" />
     <Compile Include="Patterns\Singleton\FactoryUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\GenderService.cs" />
     <Compile Include="Services\SingerService.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>

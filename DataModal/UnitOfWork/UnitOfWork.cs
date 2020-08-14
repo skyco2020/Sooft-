@@ -68,6 +68,7 @@ namespace DataModal.UnitOfWork
         private ISingerGenderRepository _SingerGenderRepository;
         private ISingerRepository _SingerRepository;
         private IUserRepository _UserRepository;
+        private ISongRepository _SongRepository;
 
         #endregion
 
@@ -142,6 +143,22 @@ namespace DataModal.UnitOfWork
             }
         }
 
+        public ISongRepository SongRepository
+        {
+            get
+            {
+                if (_SongRepository == null)
+                {
+                    return _SongRepository = new SongRepository(context);
+                }
+                return _SongRepository;
+            }
+
+            set
+            {
+                _SongRepository = value;
+            }
+        }
         #endregion
 
         #endregion

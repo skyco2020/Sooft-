@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataModal.Repositories.Interface
 {
-    public interface IGenderRepository: ISoofGenericRepository<Genders>
+    public interface ISongRepository : ISoofGenericRepository<Songs>
     {
     }
 }

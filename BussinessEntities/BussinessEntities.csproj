@@ -44,6 +44,7 @@
     <Compile Include="BE\GenderBE.cs" />
     <Compile Include="BE\SingerGenderBE.cs" />
     <Compile Include="BE\SingerBE.cs" />
+    <Compile Include="BE\Song.cs" />
     <Compile Include="BE\UserBE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

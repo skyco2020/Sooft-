@@ -29,7 +29,17 @@ namespace SooftApi.Controllers
             IQueryable<UserBE> query = _services.GetAll(state, search).AsQueryable();
             return Ok(query);
         }
+        [AllowAnonymous]
+        [System.Web.Http.HttpPost]
+        public async Task<IHttpActionResult> Post(UserBE be)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            Int64 create = _services.Create(be);
+            return Created(new Uri(Url.Link("DefaultApi", new { Id = create })), create);
+        }
 
-       
     }
 }
