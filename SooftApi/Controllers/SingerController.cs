@@ -41,5 +41,17 @@ namespace SooftApi.Controllers
             Int64 create = _services.Create(be);
             return Created(new Uri(Url.Link("DefaultApi", new { Id = create})), create);
         }
+        [AllowAnonymous]
+        [System.Web.Http.HttpPost]
+        [Route("/AddGenderSong")]
+        public async Task<IHttpActionResult> PostAddGenderSong(SingerGenderBE be)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            Int64 create = _services.CreateGenderSong(be);
+            return Created(new Uri(Url.Link("DefaultApi", new { Id = create })), create);
+        }
     }
 }

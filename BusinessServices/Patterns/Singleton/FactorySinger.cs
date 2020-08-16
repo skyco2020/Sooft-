@@ -30,7 +30,15 @@ namespace BusinessServices.Patterns.Singleton
                    idSinger = entity.idSinger,
                    Name = entity.Name,
                    state = entity.state
-                };                
+                };
+                if (entity.SingerGenders != null)
+                {
+                    be.SingerGenders = new List<SingerGenderBE>();
+                    foreach (SingerGenders item in entity.SingerGenders)
+                    {
+                        be.SingerGenders.Add(FactorySingerGender.GetInstance().CreateBusiness(item));
+                    }
+                }
                 return be;
             }
             return null;

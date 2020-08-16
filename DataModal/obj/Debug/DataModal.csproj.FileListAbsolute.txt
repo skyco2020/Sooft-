@@ -11,3 +11,16 @@ D:\SoftRepo\DataModal\obj\Debug\DataModal.csproj.CopyComplete
 D:\SoftRepo\DataModal\obj\Debug\DataModal.dll
 D:\SoftRepo\DataModal\obj\Debug\DataModal.pdb
 D:\SoftRepo\DataModal\bin\Debug\CommonServiceLocator.dll
+C:\Proyecto\Sooft\Back-end\DataModal\bin\Debug\DataModal.dll.config
+C:\Proyecto\Sooft\Back-end\DataModal\bin\Debug\DataModal.dll
+C:\Proyecto\Sooft\Back-end\DataModal\bin\Debug\DataModal.pdb
+C:\Proyecto\Sooft\Back-end\DataModal\bin\Debug\CommonServiceLocator.dll
+C:\Proyecto\Sooft\Back-end\DataModal\bin\Debug\EntityFramework.dll
+C:\Proyecto\Sooft\Back-end\DataModal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proyecto\Sooft\Back-end\DataModal\bin\Debug\EntityFramework.xml
+C:\Proyecto\Sooft\Back-end\DataModal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proyecto\Sooft\Back-end\DataModal\obj\Debug\DataModal.csprojAssemblyReference.cache
+C:\Proyecto\Sooft\Back-end\DataModal\obj\Debug\DataModal.csproj.CoreCompileInputs.cache
+C:\Proyecto\Sooft\Back-end\DataModal\obj\Debug\DataModal.csproj.CopyComplete
+C:\Proyecto\Sooft\Back-end\DataModal\obj\Debug\DataModal.dll
+C:\Proyecto\Sooft\Back-end\DataModal\obj\Debug\DataModal.pdb

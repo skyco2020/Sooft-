@@ -10,6 +10,7 @@ namespace BussinessEntities.BE
         public Int64 idSinger { get; set; }
 
         public Int64 idGender { get; set; }
+        public Int64 idSong { get; set; }
 
         public Int32 state { get; set; }
 
@@ -17,6 +18,8 @@ namespace BussinessEntities.BE
         public GenderBE Genders { get; set; }
 
         public SingerBE Singers { get; set; }
+
+        public SongBE song { get; set; }
 
         #endregion
     }

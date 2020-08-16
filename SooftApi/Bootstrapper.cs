@@ -26,6 +26,7 @@ namespace SooftApi
             container.RegisterType<ISingerService, SingerService>();
             container.RegisterType<IUserService, UserService>();
             container.RegisterType<IGenderService, GenderService>();
+            container.RegisterType<ISongService, SongService>();
 
             return container;
     }

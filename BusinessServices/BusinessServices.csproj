@@ -42,15 +42,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IGenderService.cs" />
+    <Compile Include="Interfaces\ISongService.cs" />
     <Compile Include="Interfaces\ISingerService.cs" />
     <Compile Include="Interfaces\IUserService.cs" />
     <Compile Include="Patterns\Singleton\FactoryGender.cs" />
     <Compile Include="Patterns\Singleton\FactorySinger.cs" />
     <Compile Include="Patterns\Singleton\FactorySingerGender.cs" />
+    <Compile Include="Patterns\Singleton\FactorySong.cs" />
     <Compile Include="Patterns\Singleton\FactoryUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\GenderService.cs" />
     <Compile Include="Services\SingerService.cs" />
+    <Compile Include="Services\SongService.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>

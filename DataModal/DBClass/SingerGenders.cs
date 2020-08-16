@@ -14,6 +14,7 @@ namespace DataModal.DBClass
         public Int64 idSinger { get; set; }
 
         public Int64 idGender { get; set; }
+        public Int64 idSong { get; set; }
 
         public Int32 state { get; set; }
 
@@ -23,6 +24,9 @@ namespace DataModal.DBClass
 
         [ForeignKey("idSinger")]
         public Singers Singers { get; set; }
+
+        [ForeignKey("idSong")]
+        public Songs Songs { get; set; }
 
         #endregion
     }
