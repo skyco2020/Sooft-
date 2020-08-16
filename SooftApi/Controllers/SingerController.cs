@@ -43,7 +43,7 @@ namespace SooftApi.Controllers
         }
         [AllowAnonymous]
         [System.Web.Http.HttpPost]
-        [Route("/AddGenderSong")]
+        [Route("api/Singer/AddGenderSong")]
         public async Task<IHttpActionResult> PostAddGenderSong(SingerGenderBE be)
         {
             if (!ModelState.IsValid)

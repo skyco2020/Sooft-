@@ -24,7 +24,7 @@ namespace DataModal.DBClass
         //#endregion
 
         #region List
-        public List<Songs> Song { get; set; }
+        public List<SingerGenders> SingerGenders { get; set; }
         #endregion
     }
 }

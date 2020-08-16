@@ -20,7 +20,7 @@ namespace BussinessEntities.BE
         //#endregion
 
         #region List
-        //public List<SingerGenders> SingerGenders { get; set; }
+        public List<SingerGenderBE> SingerGenders { get; set; }
         #endregion
     }
 }

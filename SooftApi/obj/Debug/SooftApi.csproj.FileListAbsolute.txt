@@ -215,3 +215,4 @@ C:\Proyecto\Sooft\Back-end\SooftApi\obj\Debug\SooftApi.csproj.CoreCompileInputs.
 C:\Proyecto\Sooft\Back-end\SooftApi\obj\Debug\SooftApi.csproj.CopyComplete
 C:\Proyecto\Sooft\Back-end\SooftApi\obj\Debug\SooftApi.dll
 C:\Proyecto\Sooft\Back-end\SooftApi\obj\Debug\SooftApi.pdb
+D:\SoftRepo\SooftApi\bin\System.Threading.Tasks.Extensions.dll
