@@ -29,6 +29,8 @@ namespace BusinessServices.Patterns.Singleton
                 {
                     idSong = entity.idSong,
                     name = entity.name,
+                    creationDate = entity.creationDate,
+                    finalDate = entity.finalDate,
                     state = entity.state
                 };
                 return be;
@@ -47,6 +49,8 @@ namespace BusinessServices.Patterns.Singleton
                 {
                     idSong = be.idSong,
                     name = be.name,
+                    creationDate = be.creationDate,
+                    finalDate = be.finalDate,
                     state = be.state
                 };
                 return entity;
