@@ -29,7 +29,10 @@ namespace BusinessServices.Patterns.Singleton
                 {
                     idSinger = entity.idSinger,
                     idSingerGender = entity.idSingerGender,
+                    idGender = entity.idGender,
+                    idSong = entity.idSong,
                     state = entity.state,
+                    song = entity.Songs != null ? FactorySong.GetInstance().CreateBusiness(entity.Songs): null,
                     Genders = entity.Genders != null ? FactoryGender.GetInstance().CreateBusiness(entity.Genders):null
                 };
                 return be;
@@ -48,6 +51,8 @@ namespace BusinessServices.Patterns.Singleton
                 {
                     idSinger = be.idSinger,
                     idSingerGender = be.idSingerGender,
+                    idSong = be.idSong,
+                    idGender = be.idGender,
                     state = be.state
                 };
                 return entity;

@@ -4,3 +4,9 @@ D:\SoftRepo\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
 D:\SoftRepo\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
 D:\SoftRepo\Resolver\obj\Debug\Resolver.dll
 D:\SoftRepo\Resolver\obj\Debug\Resolver.pdb
+C:\Proyecto\Sooft\Back-end\Resolver\bin\Debug\Resolver.dll
+C:\Proyecto\Sooft\Back-end\Resolver\bin\Debug\Resolver.pdb
+C:\Proyecto\Sooft\Back-end\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+C:\Proyecto\Sooft\Back-end\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+C:\Proyecto\Sooft\Back-end\Resolver\obj\Debug\Resolver.dll
+C:\Proyecto\Sooft\Back-end\Resolver\obj\Debug\Resolver.pdb

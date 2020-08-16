@@ -1,18 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataModal.DBClass
+namespace BussinessEntities.BE
 {
-    public class Songs
+    public class SongBE
     {
-        [Key]
-        public Int64 idSong { get; set; }
-        [Required]
-        [StringLength(100)]
+        public Int64 idSong { get; set; }      
         public String name { get; set; }
 
         public DateTime creationDate { get; set; }
@@ -24,7 +20,7 @@ namespace DataModal.DBClass
         //#endregion
 
         #region List
-        public List<Songs> Song { get; set; }
+        //public List<SingerGenders> SingerGenders { get; set; }
         #endregion
     }
 }

@@ -4,3 +4,9 @@ D:\SoftRepo\BussinessEntities\obj\Debug\BussinessEntities.csprojAssemblyReferenc
 D:\SoftRepo\BussinessEntities\obj\Debug\BussinessEntities.csproj.CoreCompileInputs.cache
 D:\SoftRepo\BussinessEntities\obj\Debug\BussinessEntities.dll
 D:\SoftRepo\BussinessEntities\obj\Debug\BussinessEntities.pdb
+C:\Proyecto\Sooft\Back-end\BussinessEntities\bin\Debug\BussinessEntities.dll
+C:\Proyecto\Sooft\Back-end\BussinessEntities\bin\Debug\BussinessEntities.pdb
+C:\Proyecto\Sooft\Back-end\BussinessEntities\obj\Debug\BussinessEntities.csprojAssemblyReference.cache
+C:\Proyecto\Sooft\Back-end\BussinessEntities\obj\Debug\BussinessEntities.csproj.CoreCompileInputs.cache
+C:\Proyecto\Sooft\Back-end\BussinessEntities\obj\Debug\BussinessEntities.dll
+C:\Proyecto\Sooft\Back-end\BussinessEntities\obj\Debug\BussinessEntities.pdb
