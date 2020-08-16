@@ -29,6 +29,15 @@ namespace SooftApi.Controllers
             IQueryable<UserBE> query = _services.GetAll(state, search).AsQueryable();
             return Ok(query);
         }
+
+        [AllowAnonymous]
+        [System.Web.Http.HttpGet]
+        public async Task<IHttpActionResult> GetById(Int64 id)
+        {
+            UserBE query = _services.GetById(id);
+            return Ok(query);
+        }
+
         [AllowAnonymous]
         [System.Web.Http.HttpPost]
         public async Task<IHttpActionResult> Post(UserBE be)

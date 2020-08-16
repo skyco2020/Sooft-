@@ -29,6 +29,13 @@ namespace SooftApi.Controllers
             IQueryable<SingerBE> query = _services.GetAll(state, search).AsQueryable();
             return Ok(query);
         }
+        [AllowAnonymous]
+        [System.Web.Http.HttpGet]
+        public async Task<IHttpActionResult> GetById(Int64 id)
+        {
+            SingerBE query = _services.GetById(id);
+            return Ok(query);
+        }
 
         [AllowAnonymous]
         [System.Web.Http.HttpPost]
@@ -51,7 +58,15 @@ namespace SooftApi.Controllers
                 return BadRequest(ModelState);
             }
             Int64 create = _services.CreateGenderSong(be);
-            return Created(new Uri(Url.Link("DefaultApi", new { Id = create })), create);
+            return Ok(create);
+        }
+        [AllowAnonymous]
+        [System.Web.Http.HttpGet]
+        [Route("api/Singer/GetAllDetail")]
+        public async Task<IHttpActionResult> GetAllDetail(Int64 id = 0)
+        {
+            IQueryable<SingerGenderBE> query = _services.DetailGenderSong(id).AsQueryable();
+            return Ok(query);
         }
     }
 }

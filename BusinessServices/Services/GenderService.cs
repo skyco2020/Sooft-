@@ -43,7 +43,7 @@ namespace BusinessServices.Services
 
         public List<GenderBE> GetAll(int state, string Search)
         {
-            Expression<Func<DataModal.DBClass.Genders, Boolean>> predicate = u => u.state == (byte)state && (u.name == Search || Search == "");
+            Expression<Func<DataModal.DBClass.Genders, Boolean>> predicate = u => u.state == (byte)state && (u.name == Search || String.IsNullOrEmpty(Search));
             IQueryable<DataModal.DBClass.Genders> entities = _unitOfWork.GenderRepository.GetAllByFilters(predicate, new string[] { "SingerGenders", "SingerGenders.Singers" });
 
             List<GenderBE> listbe = new List<GenderBE>();

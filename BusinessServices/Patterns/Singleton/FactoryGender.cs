@@ -36,15 +36,15 @@ namespace BusinessServices.Patterns.Singleton
                    Users = entity.Users != null ? FactoryUser.GetInstance().CreateBusiness(entity.Users): null
                 };
 
-                if (entity.SingerGenders != null)
-                {
-                    be.SingerGenders = new List<SingerGenderBE>();
+                //if (entity.SingerGenders != null)
+                //{
+                //    be.SingerGenders = new List<SingerGenderBE>();
 
-                    foreach (SingerGenders item in entity.SingerGenders)
-                    {
-                        be.SingerGenders.Add(FactorySingerGender.GetInstance().CreateBusiness(item));
-                    }
-                }
+                //    foreach (SingerGenders item in entity.SingerGenders)
+                //    {
+                //        be.SingerGenders.Add(FactorySingerGender.GetInstance().CreateBusiness(item));
+                //    }
+                //}
                 return be;
             }
             return null;

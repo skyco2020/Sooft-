@@ -32,8 +32,8 @@ namespace BusinessServices.Patterns.Singleton
                     idGender = entity.idGender,
                     idSong = entity.idSong,
                     state = entity.state,
-                    song = entity.Songs != null ? FactorySong.GetInstance().CreateBusiness(entity.Songs): null,
-                    Genders = entity.Genders != null ? FactoryGender.GetInstance().CreateBusiness(entity.Genders):null
+                    song = entity.Songs != null ? FactorySong.GetInstance().CreateBusiness(entity.Songs) : null,
+                    Genders = entity.Genders != null ? FactoryGender.GetInstance().CreateBusiness(entity.Genders) : null
                 };
                 return be;
             }

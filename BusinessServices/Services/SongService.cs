@@ -43,7 +43,7 @@ namespace BusinessServices.Services
 
         public List<SongBE> GetAll(int state, string Search)
         {
-            Expression<Func<DataModal.DBClass.Songs, Boolean>> predicate = u => u.state == (byte)state && (u.name == Search || Search == "");
+            Expression<Func<DataModal.DBClass.Songs, Boolean>> predicate = u => u.state == (byte)state && (u.name == Search || String.IsNullOrEmpty(Search));
             IQueryable<DataModal.DBClass.Songs> entities = _unitOfWork.SongRepository.GetAllByFilters(predicate, null);
 
             List<SongBE> listbe = new List<SongBE>();

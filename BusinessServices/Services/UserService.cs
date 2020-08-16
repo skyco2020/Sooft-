@@ -44,7 +44,7 @@ namespace BusinessServices.Services
 
         public List<UserBE> GetAll(int state, string Search)
         {
-            Expression<Func<DataModal.DBClass.Users, Boolean>> predicate = u => u.state == (byte)state && (u.userName == Search || Search == "");
+            Expression<Func<DataModal.DBClass.Users, Boolean>> predicate = u => u.state == (byte)state && (u.userName == Search || String.IsNullOrEmpty(Search));
             IQueryable<DataModal.DBClass.Users> entities = _unitOfWork.UserRepository.GetAllByFilters(predicate, null);
 
             List<UserBE> listbe = new List<UserBE>();

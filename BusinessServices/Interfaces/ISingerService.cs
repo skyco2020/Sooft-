@@ -13,5 +13,6 @@ namespace BusinessServices.Interfaces
         List<SingerBE> GetAll(Int32 state, String Search);
         Int64 Create(SingerBE Be);
         Int64 CreateGenderSong(SingerGenderBE Be);
+        List<SingerGenderBE> DetailGenderSong(Int64 Id);
     }
 }
