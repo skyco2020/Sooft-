@@ -194,6 +194,7 @@
     <Compile Include="Controllers\GenderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\SongController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\SingerController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
