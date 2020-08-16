@@ -28,7 +28,7 @@ namespace BusinessServices.Services
                 Genders entity = Patterns.Singleton.FactoryGender.GetInstance().CreateEntity(Be);
                 List<Genders> verify = _unitOfWork.GenderRepository.GetAllByFilters(p => p.name.ToLower() == entity.name.ToLower()).ToList();
                 if (verify.Count > 0)
-                    throw new Exception(System.Net.HttpStatusCode.BadRequest.ToString());
+                    throw new Exception(((Int32)System.Net.HttpStatusCode.BadRequest).ToString());
 
                 _unitOfWork.GenderRepository.Create(entity);
                 _unitOfWork.Commit();

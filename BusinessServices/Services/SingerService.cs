@@ -28,7 +28,7 @@ namespace BusinessServices.Services
                 Singers entity = Patterns.Singleton.FactorySinger.GetInstance().CreateEntity(Be);
                 List<Singers> verify = _unitOfWork.SingerRepository.GetAllByFilters(u => u.Name.ToLower() == entity.Name.ToLower()).ToList();
                 if (verify.Count > 0)
-                    throw new Exception(System.Net.HttpStatusCode.BadRequest.ToString());
+                    throw new Exception(((Int32)System.Net.HttpStatusCode.BadRequest).ToString());
 
                 _unitOfWork.SingerRepository.Create(entity);
                 _unitOfWork.Commit();
@@ -46,7 +46,7 @@ namespace BusinessServices.Services
             SingerGenders entity = Patterns.Singleton.FactorySingerGender.GetInstance().CreateEntity(Be);
             List<SingerGenders> verify = _unitOfWork.SingerGenderRepository.GetAllByFilters(u => u.idSinger == entity.idSinger && u.idGender == entity.idGender).ToList();
             if (verify.Count > 0)
-                throw new Exception(System.Net.HttpStatusCode.BadRequest.ToString());
+                throw new Exception(((Int32)System.Net.HttpStatusCode.BadRequest).ToString());
 
             _unitOfWork.SingerGenderRepository.Create(entity);
             _unitOfWork.Commit();

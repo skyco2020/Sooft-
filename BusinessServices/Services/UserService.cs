@@ -29,7 +29,7 @@ namespace BusinessServices.Services
                 Users entity = Patterns.Singleton.FactoryUser.GetInstance().CreateEntity(Be);
                 List<Users> verify = _unitOfWork.UserRepository.GetAllByFilters(p => p.userName.ToLower() == entity.userName.ToLower()).ToList();
                 if (verify.Count > 0)
-                    throw new Exception(System.Net.HttpStatusCode.BadRequest.ToString());
+                    throw new Exception(((Int32)System.Net.HttpStatusCode.BadRequest).ToString());
 
                 _unitOfWork.UserRepository.Create(entity);
                 _unitOfWork.Commit();

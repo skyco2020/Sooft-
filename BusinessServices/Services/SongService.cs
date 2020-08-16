@@ -28,7 +28,7 @@ namespace BusinessServices.Services
                 Songs entity = Patterns.Singleton.FactorySong.GetInstance().CreateEntity(Be);
                 List<Songs> verify = _unitOfWork.SongRepository.GetAllByFilters(p => p.name.ToLower() == entity.name.ToLower()).ToList();
                 if (verify.Count > 0)
-                    throw new Exception(System.Net.HttpStatusCode.BadRequest.ToString());
+                    throw new Exception(((Int32)System.Net.HttpStatusCode.BadRequest).ToString());
 
                 _unitOfWork.SongRepository.Create(entity);
                 _unitOfWork.Commit();
